@@ -1,0 +1,6 @@
+<form class="login" #loginForm="ngForm">
+  <input type="text" name="email" [(ngModel)]="user.email">
+  <input type="text" name="password" [(ngModel)]="user.password">
+  <input type="submit" name="go" (click)="login(loginForm)">
+</form>
+{{user.email}}!
